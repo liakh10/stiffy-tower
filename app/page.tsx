@@ -97,7 +97,7 @@ export default function Home() {
       <Enter />
       <main>
         <header className="nav">
-          <a href="#top" className="brand"><Image src="/dude.png" alt="" width={26} height={26} className="brand-mascot" /> <b>Stiffy Tower</b> <span className="brand-ticker">{TICKER}</span></a>
+          <a href="#top" className="brand"><Image src="/x-avatar.png" alt="" width={26} height={26} className="brand-mascot" style={{ borderRadius: "50%", objectFit: "cover" }} /> <b>Stiffy Tower</b> <span className="brand-ticker">{TICKER}</span></a>
           <nav className="nav-links">{NAV.map((n) => <a key={n.href} href={n.href}>{n.label}</a>)}</nav>
           <div className="nav-actions">
             <button className="icon-btn" onClick={toggleMute} title="sound">{muted ? "off" : "on"}</button>
@@ -141,7 +141,7 @@ export default function Home() {
 
         <footer className="footer">
           <div className="footer-top reveal">
-            <a href="#top" className="brand"><Image src="/dude.png" alt="" width={24} height={24} className="brand-mascot" /> <b>Stiffy Tower</b></a>
+            <a href="#top" className="brand"><Image src="/x-avatar.png" alt="" width={24} height={24} className="brand-mascot" style={{ borderRadius: "50%", objectFit: "cover" }} /> <b>Stiffy Tower</b></a>
             <div className="footer-links"><a href="#play">Play</a><a href="#how">How</a><a href="#notes">Notes</a><a href="/docs">Docs</a><a href={X_URL} target="_blank" rel="noreferrer" className="footer-x"><XIcon size={14} /> X</a></div>
           </div>
           <div className="footer-buy reveal"><CABlock /><BuyLinks small /></div>
